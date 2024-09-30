@@ -1,0 +1,5 @@
+The Relingo translator plugin for chrome has a ReactJS DOM XSS vulnerability.
+
+The vulnerability is caused by rendering the original text using {dangerouslySetInnerHTML: {__html: c}}.
+
+Vulnerability code: In build->content.js, ReactJS uses dangerouslySetInnerHTML to render the selected original text.
